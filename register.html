@@ -30,5 +30,34 @@
 			<p id="first">&nbsp&nbsp&nbspAlready have an account?<a href="Login.html">Sign in</a></p>
 	</form>
 	</div>
+
+	
+<div class="w3-content w3-section">
+  <img class="mySlides w3-animate-right" src="2f6b5dea6f7c4e0b3f628f204c879fbd.jpg" >
+  <img class="mySlides w3-animate-right" src="csm_box-restaurant-wolf-hotels_04_e8b4bdf3f0.jpg" >
+  <img class="mySlides w3-animate-right" src="17828854_rH42hpBmIrctgUd2l5hlOfoOLktYNPYyQbfK6fPAcIU.jpg" >
+  <img class="mySlides w3-animate-right" src="blue-spa-web.jpg">
+  <img class="mySlides w3-animate-right" src="dam-images-travel-2015-hotel-pools-best-hotel-pools-01.jpg">
+</div>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000);    
+}
+</script>
+
+
 </body>
 </html>
