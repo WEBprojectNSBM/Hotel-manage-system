@@ -1,72 +1,62 @@
-body{ 
-	margin: 0;
-	padding: 0;
-	
-	 background-image: url("ww.jpg"); 
- 	background-size:cover;
- 	background-position: center;
- 	font-family:sans-serif;
+*{
+  margin-top: 20px;
+  transition: all 1s ease-in-out;
+}
 
+body
+{
+  margin: 0;
+  padding: 0;
+  background-image: url("ww.jpg"); 
+  background-size:cover;
+  font-family:sans-serif;
+} 
 
-  } 
-  .room
-  {
-  	max-width: 700px;
-  	max-height: 2200px;
-  	border-radius: 10px;
-  	margin:auto;
-  	background: rgba(0,0,0,0.7);
-  	box-sizing: border-box;
-  	padding: 40px;
-  	color: #fff;
-  	margin-top: 60px;
-  }
-  .contact-title
-  {
-  	margin-top: 100px;
-  	color: #00000;
-  	text-transform: uppercase;
-  	transition: all 4s ease-in-out;
-  }
+.hall
+{ max-width: 750px;
+  max-height: 2200px;
+  border-radius: 100px;
+  margin:auto;
+  background: rgba(0,0,0,0.7);
+  box-sizing: border-box;
+  padding: 40px;
+  color: #fff;
+  margin-top: 50px;
+}
 
-  .contact-title h1{
-  	 font-size: 32px;
-  	 line-height: 5px;
-  }
+.hallhead
+{ max-width: 700px;
+  max-height: 2200px;
+  border-radius: 100px;
+  margin:auto;
+  background: rgba(0,0,0,0.7);
+  box-sizing: border-box;
+  padding: 40px;
+  color: #fff;
+  margin-top: 50px;
+  font-size: 35px;
+  font-family: Showcard Gothic;
+}
 
-  .contact-title h2{
-  	font-size: 16px;
-  }
-  form
-  {
-  	margin-top: 50px;
-  	transition: all 4s ease-in-out;
-  }
-  .form-control
-  {
-  	width:600px;
-  	background: transparent;
-  	border:none;
-  	outline: none;
-  	border-bottom: 1px solid gray;
-  	color:#000000;
-  	font-size: 18px;
-  	margin-bottom: 16px;
-  }
-  form.submit
-  {
-  	background: #ff5722;
-  	border-color: transparent;
-  	color:#C0C0C0;
-  	font-size: 20px;
-  	font-weight:bold;
-  	letter-spacing: 2px;
-  	height: 50px;
-  	margin-top: 20px; 
-  }
-  form.submit:hover
-  {
-  	background: color:#f44336;
-  	cursor: pointer;
-  }
+.form-control
+{
+  width:650px;
+  background: transparent;
+  border:none;
+  outline: none;
+  border-bottom: 2px solid gray;
+  color: white;
+  font-size: 19px;
+  margin-bottom: 16px;
+  text-align: center;
+}
 
+.formfil{
+  font-size: 19px;
+  color: white;
+
+}
+
+.menu1{
+  top: 70px;
+}

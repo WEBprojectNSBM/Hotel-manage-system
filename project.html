@@ -3,16 +3,20 @@
 <head>
 
     
-	<title>Room Booking</title>
+	<title>Hall Booking</title>
 	<link rel="stylesheet" type="text/css" href="project.css">
 </head>
 <body>
-	<div class="Room">
-	<div class="Room Booking Form- title">
-		 	<h1>Hall Booking Form</h1>
-			<h2>We are always ready to serve you:</h2>
+	<div class="hall">
+		<div class="hallhead">
+		 	Hall Booking Form
+		 	<br><br>
+			We are always ready to serve you:
+		
 	</div>
-	<div class=" Booking Form">
+
+	<div class=" BookingForm">
+
 		<form id="Booking Form" method="post" action="">
 			<input name="User Name"type="text"class="form-control"placeholder="User Name"required>
 			<br> 
@@ -23,38 +27,46 @@
 			<input name="City"type="text"class="form-control"placeholder="City"required> 
 			<br><br>
 
-function date : <input type="date" id="myDate">
-<br><br>
-<p>SELECT A NUMBER</p>
-<form action="/action_page.php">
-  <label for="Number">Number of guests:</label>
-  <select name="Number" id="Number of guests">
-    <option value="1">SELECT</option>
-    <option value="2">below 250</option>
-    <option value="2">250-500</option>
-    <option value="3">500-750</option>
-    <option value="4">750-1000</option>
- </select> 
-</form>
+			<div class="formfil">
+			<label for="fd">Function Data</label><input type="date" id="myDate">
+			<br><br>
+			<p>SELECT A NUMBER</p>
 
-<form action="/action_page.php" method="get">
-	<lable for="select">CHOOSEN YOUR PLATE MENUE:</lable><br>
-  <input type="radio" name="menue" value="DIAMOND">
-  <label for="DIAMOND"> DIAMOND MENUE</label><br>
-  <input type="radio" name="menue" value="GOLDEN">
-  <label for="GOLDEN"> GOLDEN MENUE</label><br>
-  <input type="radio" name="menue" value="SILVER">
-  <label for="SILVER">SILVER MENUE</label><br><br>
-  
-</form>
+			  <label for="Number">Number of guests:</label>
+			  <select name="Number" id="Number of guests">
+			    <option value="1">below 250</option>
+			    <option value="2">250-500</option>
+			    <option value="3">500-750</option>
+			    <option value="4">750-1000</option>
+			  </select> 
 
-<form>
-<br><input type="submit" class ="form-control"name="submit">
-</form>
+			  <br><br>
+			  <label for="Number">How Many Days:</label>
+			  <select name="Number" id="Number of days">
+			    <option value="1">1</option>
+			    <option value="2">2</option>
+			    <option value="3">3</option>
+			    <option value="4">4</option>
+			    <option value="5">5</option>
+			  </select> 
+			  <br><br>
 
+			<lable for="select">CHOOSEN YOUR PLATE MENUE:</lable><br><br>
 
+			<div class="menu1">
+			  <input type="radio" name="menue" value="DIAMOND">
+			  <label for="DIAMOND"> DIAMOND MENUE</label><br>
+			  <input type="radio" name="menue" value="GOLDEN">
+			  <label for="GOLDEN"> GOLDEN MENUE</label><br>
+			  <input type="radio" name="menue" value="SILVER">
+			  <label for="SILVER">SILVER MENUE</label><br><br>
+			</div>
+			<div class="subbt">	<input type="submit" class ="form-control"name="submit"></div>
+
+	
+		</form>
 
 	</div>
-
+</div>
 </body>
 </html>
