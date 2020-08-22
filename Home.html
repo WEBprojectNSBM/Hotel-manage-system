@@ -1,9 +1,13 @@
 <html>
 <head>
 
-	<title>Blue Pearl</title>
+	<title>Blue Pearl <?php echo $page_name; ?></title>
 	<link rel="stylesheet" type="text/css" href="home.css">
+	<link rel="stylesheet" type="text/" href="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<?php
+ 	$page_name = "Unique page name";
+	?>
 
 </head>
 <body>
@@ -176,7 +180,7 @@
 </div>
 
 
-
+<footer>
 <div class="down" id="contactus">
 	<div class="foot">
 		COMPANY INFORMATION :
@@ -194,10 +198,16 @@
 		<br>
 		THIS PROJECT IS BROUGHT TO YOU BY CODE-PROJECTS
 	</div>
+	  <p>
+	<?php
+    echo "You are the", $access_number, " visitor on this site!";
+    ?>
+	</p>
 
 
 
 </div>
+</footer>
 
 </body>
 </html>
