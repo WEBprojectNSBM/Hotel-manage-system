@@ -14,54 +14,62 @@
 			We are always ready to serve you:
 		
 	</div>
+<br><br>
 
 	<div class=" BookingForm">
 
-		<form id="Booking Form" method="post" action="">
-			<input name="User Name"type="text"class="form-control"placeholder="User Name"required>
+		<form id="Booking Form" method="GET" action="project.php">
+			<input name="fname"type="text"class="form-control"placeholder="Full Name"required>
 			<br> 
-			<input name="User ID"type="text"class="form-control"placeholder="User ID"required>
+			<input name="uname"type="text"class="form-control"placeholder="User Name"required>
 			<br>
-			<input name="Contact Number"type="text"class="form-control"placeholder="Contact Number"required> 
+			<input name="cnum"type="text"class="form-control"placeholder="Contact Number"required> 
 			<br>
-			<input name="City"type="text"class="form-control"placeholder="City"required> 
+			<input name="city"type="text"class="form-control"placeholder="City"required> 
 			<br><br>
 
 			<div class="formfil">
-			<label for="fd">Function Data</label><input type="date" id="myDate">
-			<br><br>
-			<p>SELECT A NUMBER</p>
 
-			  <label for="Number">Number of guests:</label>
-			  <select name="Number" id="Number of guests">
-			    <option value="1">below 250</option>
-			    <option value="2">250-500</option>
-			    <option value="3">500-750</option>
-			    <option value="4">750-1000</option>
-			  </select> 
+				<label for="fd">Function Date</label>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<input type="date" id="myDate" name="pickd">
+				<br><br
+
+				<label for="Number">Number of guests:</label>
+				&nbsp&nbsp&nbsp
+			  		<select name="guest" id="Number of guests">
+			    	<option value="1">below 250</option>
+			    	<option value="2">250-500</option>
+			    	<option value="3">500-750</option>
+			    	<option value="4">750-1000</option>
+			  		</select> 
 
 			  <br><br>
-			  <label for="Number">How Many Days:</label>
-			  <select name="Number" id="Number of days">
-			    <option value="1">1</option>
-			    <option value="2">2</option>
-			    <option value="3">3</option>
-			    <option value="4">4</option>
-			    <option value="5">5</option>
-			  </select> 
-			  <br><br>
+			  
+			  	<label for="Number">How Many Days:</label>
+			  	&nbsp&nbsp&nbsp&nbsp&nbsp
+			  		<select name="nuday" id="Number of days">
+			    	<option value="1">1</option>
+			    	<option value="2">2</option>
+			    	<option value="3">3</option>
+			    	<option value="4">4</option>
+			    	<option value="5">5</option>
+			  		</select> 
+			  		
+			  		<br><br><br><br>
 
-			<lable for="select">CHOOSEN YOUR PLATE MENUE:</lable><br><br>
+				<lable for="select">CHOOSEN YOUR PLATE MENUE:</lable><br>
 
-			<div class="menu1">
-			  <input type="radio" name="menue" value="DIAMOND">
-			  <label for="DIAMOND"> DIAMOND MENUE</label><br>
-			  <input type="radio" name="menue" value="GOLDEN">
-			  <label for="GOLDEN"> GOLDEN MENUE</label><br>
-			  <input type="radio" name="menue" value="SILVER">
-			  <label for="SILVER">SILVER MENUE</label><br><br>
+ 				<button class="dropbtn" name="dia">DIAMOND</button>
+
+ 				<button class="dropbtn" name="gol">GOLDEN</button>
+
+ 				<button class="dropbtn" name="sil">SILVER</button>
+
 			</div>
-			<div class="subbt">	<input type="submit" class ="form-control"name="submit"></div>
+
+
+	<div class="subbt">	<input type="submit" class ="form-control"name="submit"></div>
 
 	
 		</form>
