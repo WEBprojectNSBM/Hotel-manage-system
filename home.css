@@ -11,7 +11,7 @@ body{
   	background-size: 100% 780px;
   	font-size: 18px;
   	font-family: ;
-    background-color: #cce6ff;
+
 }
 
 .navbar {
@@ -298,3 +298,30 @@ h2{
   font-size: 25px;
 
 }
+
+.wrapper{
+  height:250px;
+  width: 300px;
+  background-color: skyblue;
+  margin: auto;
+  text-align: center;
+  border: 1px solid white;
+  box-shadow: 2px 2px 10px gray;
+}
+
+.visi{
+  background-color: green;
+  color: white;
+  border-bottom: solid white;
+}
+
+.count{
+  font-size: 17px;
+}
+
+.visi,.count{
+  padding: 20px;
+  margin: 0px;
+}
+
+
