@@ -3,127 +3,107 @@
 <head>
 
     
-	<title>Room Booking</title>
+	<title>Hall Booking</title>
 	<link rel="stylesheet" type="text/css" href="project.css">
+	<link rel="stylesheet" type="text/css" href="nave.css">
 </head>
 <body>
-	<div class="Room">
-	<div class="Room Booking Form- title">
-		 	<h1>Room Booking Form</h1>
-			<h2>We are always ready to serve you:</h2>
-	</div >	<div class=" Booking Form">
-		<form action="project.php" method="GET">
-			<center>
-			<input name="Username" type="text"class="form-control"placeholder="User Name" required>
-			<br> 
-		 	
-			<input name="Contactnumber"type="text"class="form-control"placeholder="Contact Number"required> 
-			<br>
-			<input name="City"type="text"class="form-control"placeholder="City"required> 
-			<br>
 
-			
-			<p>AC ROOM PRICE PER DAY  <br>($ 20 000)</p>
-			<p>NON AC ROOM PRICE PER DAY  <br>($ 15 000)</p>
-			<br>
-			
+<div class="navbar">
 
-  <p>ROOM TYPE</p>
-  <input type="radio" id="AC" name="Room" value="AC">
-  <label for="AC">AC</label>
-  <input type="radio" id="Non AC" name="Room" value="Non AC">
-  <label for="Non AC">Non AC</label><br>
-<br>
+  <a href="home.html">Home</a>
 
- <p>ROOM SIDE</p>
-  <input type="radio" id="Sea side" name="side" value="Sea_side">
-  <label for="Sea side">sea side</label>
-  <input type="radio" id="Hill Side" name="side" value="Hill_side">
-  <label for="Hill Side">Hill side</label><br>
-  <br>
+  <a href="room.html">Room</a>
 
- 
-<p>SELECT A ROOM NUMBER</p>
+  <a href="project.html">Hotel Reservation</a>
 
-  <label for="Number">Room_Numbers:</label>
-  <select name="Number" id="Room_Numbers">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">7</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-    <option value="13">13</option>
-    <option value="14">14</option>
-    <option value="15">15</option>
-    <option value="16">16</option>
-    <option value="17">17</option>
-    <option value="18">18</option>
-    <option value="19">19</option>
-    <option value="20">20</option>
-    </select>
-  </form><br>
-  <br>
-<p>SELECT A NUMBER</p>
+  <div class="dropdown">
+  <button class="dropbtn">Mulitiple Hotel
+      <i class="fa fa-caret-down"></i>
+  </button>
 
-  <label for="guest">Number of guests:</label>
-  <select name="guest" id="Number_of_guests">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">7</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-    <option value="10">10</option>
-    <br>
-    
+    <div class="dropdown-content">
+        <a href="web2-gallery.html">View Photo Gallery</a>
+        <a href="22.html">Hotel Facilities</a>
+        <a href="test.html">Location</a>
+    </div>
 
- </select>
-  
-  
-</form>
-<br>
-<p>For meals  <br>($ 1000)</p>
-<p>For Phool  <br>($ 1 000)</p>
-<p>TV <br>($ 500)</p>
-<br>
+  </div> 
 
+  <a href="home.html">About Us</a>
+  <a href="home.html">Conyact Us</a>   
 
+</div>
 
-	<lable for="select">CHOOSEN WHAT YOU WANT</lable><br>
-  <input type="checkbox" name="need" value="Meals">
-  <label for="Meals"> Meals</label><br>
-  <input type="checkbox" name="need" value="Pool">
-  <label for="Pool"> Pool</label><br>
-  <input type="checkbox" name="need" value="TV" >
-  <label for="TV"> TV</label><br>
-  <input type="checkbox" name="need" value="All">
-  <lable for="All">All</lable><br>
-  
-</form>
-<br>
-Arrival Date : <input type="date" name="Adate" id="myDate">
-<br>
-Departure Date : <input type="date" name="Ddate"id="myDate">
-<br>
-</center>
-
-<form>
-<br><input type="submit" class ="form-control"name="submit">
-</form>
-
-
-
+	<div class="hall">
+		<div class="hallhead">
+		 	Hall Booking Form
+		 	<br><br>
+			We are always ready to serve you:
+		
 	</div>
 
+<br><br>
+
+	<div class=" BookingForm">
+
+		<form id="Booking Form" method="GET" action="project.php">
+			<input name="fname"type="text"class="form-control"placeholder="Full Name"required>
+			<br> 
+			<input name="uname"type="text"class="form-control"placeholder="User Name"required>
+			<br>
+			<input name="cnum"type="text"class="form-control"placeholder="Contact Number"required> 
+			<br>
+			<input name="city"type="text"class="form-control"placeholder="City"required> 
+			<br><br>
+
+			<div class="formfil">
+
+				<label for="fd">Function Date</label>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<input type="date" id="myDate" name="pickd">
+				<br><br
+
+				<label for="Number">Number of guests:</label>
+				&nbsp&nbsp&nbsp
+			  		<select name="guest" id="Number of guests">
+			    	<option value="1">below 250</option>
+			    	<option value="2">250-500</option>
+			    	<option value="3">500-750</option>
+			    	<option value="4">750-1000</option>
+			  		</select> 
+
+			  <br><br>
+			  
+			  	<label for="Number">How Many Days:</label>
+			  	&nbsp&nbsp&nbsp&nbsp&nbsp
+			  		<select name="nuday" id="Number of days">
+			    	<option value="1">1</option>
+			    	<option value="2">2</option>
+			    	<option value="3">3</option>
+			    	<option value="4">4</option>
+			    	<option value="5">5</option>
+			  		</select> 
+			  		
+			  		<br><br><br><br>
+
+				<lable for="select">CHOOSEN YOUR PLATE MENUE:</lable><br>
+
+ 				<button class="dropbtn" name="dia">DIAMOND</button>
+
+ 				<button class="dropbtn" name="gol">GOLDEN</button>
+
+ 				<button class="dropbtn" name="sil">SILVER</button>
+
+			</div>
+
+
+	<div class="subbt">	<input type="submit" class ="form-control"name="submit"></div>
+
+	
+		</form>
+
+	</div>
+</div>
 </body>
 </html>

@@ -1,13 +1,10 @@
 <html>
 <head>
 
-	<title>Blue Pearl <?php echo $page_name; ?></title>
+	<title>Blue Pearl</title>
 	<link rel="stylesheet" type="text/css" href="home.css">
-	<link rel="stylesheet" type="text/" href="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<?php
- 	$page_name = "Unique page name";
-	?>
+
 
 </head>
 <body>
@@ -16,33 +13,21 @@
 
 <div class="navbar">
 
-	<a href="#home">Home</a>
+	<a href="home.html">Home</a>
+
+	<a href="room.html">Room</a>
+
+	<a href="project.html">Hotel Reservation</a>
 
 	<div class="dropdown">
-
-	<button class="dropbtn">Room
-	    <i class="fa fa-caret-down"></i>
-	</button>
-
-		<div class="dropdown-content">
-		    <a href="#">Check Availability</a>
-		    <a href="#">Booking</a>
-		</div>
-
-	</div> 
-
-	<a href="#">Hotel Reservation</a>
-
-	<div class="dropdown">
-
 	<button class="dropbtn">Mulitiple Hotel
 	    <i class="fa fa-caret-down"></i>
 	</button>
 
 		<div class="dropdown-content">
-		    <a href="#">View Photo Gallery</a>
-		    <a href="#">Hotel Facilities</a>
-		    <a href="#">Map</a>
+		    <a href="web2-gallery.html">View Photo Gallery</a>
+		    <a href="22.html">Hotel Facilities</a>
+		    <a href="test.html">Location</a>
 		</div>
 
 	</div> 
@@ -55,8 +40,8 @@
 
 <div class="menu ">
 	<ul>
-		<li><a href="#" ><button class="button1 bt1">Sign  up</button></a></li> 
-		<li><a href="#" ><button class="button2 bt2">Login</button></a></li>
+		<li><a href="Signup.html" ><button class="button1 bt1">Sign up</button></a></li> 
+		<li><a href="Login.html" ><button class="button2 bt2">Login</button></a></li>
 	</ul>
 </div>
 		
@@ -180,6 +165,10 @@
 </div>
 
 
+
+
+
+
 <footer>
 <div class="down" id="contactus">
 	<div class="foot">
@@ -196,15 +185,34 @@
 		<br>
 		Follow us on: Facebook, Twitter
 		<br>
+		  <div class="icon">
+    
+    <a target="_blank" href="fb (2).png"></a>
+      <a href="https://www.facebook.com/">
+    <img src="fb (2).png" ></a>
+    <a href="https://www.instagram.com/?hl=en">
+    <img src="ig.png"></a>
+    <a href="https://twitter.com/?lang=en">
+    <img src="tw.png"></a>
+    <a href="https://accounts.google.com/ServiceLogin/signinchooser?elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"></a>
+    <img src="gg.png"></a>
+   
+</div>
 		THIS PROJECT IS BROUGHT TO YOU BY CODE-PROJECTS
+		<form action="home.php" method="REQUEST">
+		<div class="wrapper">
+  		<div class="visi">
+    	Visitor Count
+  		</div>
+  		<div class="count">
+    	<?php
+    	echo $total_visitors;
+    	?>
+  		</div>
+
+		</div>
+		</form>
 	</div>
-	  <p>
-	<?php
-    echo "You are the", $access_number, " visitor on this site!";
-    ?>
-	</p>
-
-
 
 </div>
 </footer>

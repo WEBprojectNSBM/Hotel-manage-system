@@ -10,34 +10,7 @@
                 margin:0;
                 background: gray;
             }
-            nav{
-                background: #353434;
-                width:100%;
-                overflow : auto; 
-            }
-            u1{
-                margin: 0;
-                padding: 10;
-                list-style: none;
-
-            }
-            li{
-                float: left;
-            }
-            nav a{
-                width: 130px;
-                display: block;
-                text-decoration: none;
-                text-align: center;
-                background:  #353434;
-                color: rgb(214, 210, 210);
-                padding: 20px 10px;
-                font-family: arial;
-            }
-            nav a:hover{
-                
-                color: rgb(156, 152, 152);
-            }
+            
             .container{
                 max-width: 1200px;
                 margin:auto;
@@ -69,21 +42,49 @@
                 letter-spacing: 1px;
             }
         </style>
+        <link rel="stylesheet" type="text/css" href="nave.css">
     </head>
     <body>
-        <nav>
-            <u1>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Room</a></li>
-                <li><a href="#"> Reservation</a></li>
-                <li><a href="#">Multiple Hotel</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="22.html">Facilities</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="test.html">Location</a></li> 
-            </u1>
-        </nav>
+
+        <div class="navbar">
+
+    <a href="home.html">Home</a>
+
+    <div class="dropdown">
+
+    <button class="dropbtn">Room
+        <i class="fa fa-caret-down"></i>
+    </button>
+
+        <div class="dropdown-content">
+            <a href="#">Check Availability</a>
+            <a href="#">Booking</a>
+        </div>
+
+    </div> 
+
+    <a href="#">Hotel Reservation</a>
+
+    <div class="dropdown">
+
+    <button class="dropbtn">Mulitiple Hotel
+        <i class="fa fa-caret-down"></i>
+    </button>
+
+        <div class="dropdown-content">
+            <a href="web2-gallery.html">View Photo Gallery</a>
+            <a href="22.html">Hotel Facilities</a>
+            <a href="test.html">LOCATION</a>
+        </div>
+
+    </div> 
+
+    <a href="#aboutus">About Us</a>
+    <a href="#contactus">Conyact Us</a>     
+
+
+</div>
+
         <div class ="container">
             <div class="gallery">
                     <a target="_blank" href="yy.jpg">

@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="Signup.css">
+  	<link rel="stylesheet" type="text/css" href="home.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<style>
+.mySlides {display:none;}
+</style>
+
+
+</head>
+<body>
+	<style>
+		body{
+			background: url("night-dark-hotel-luxury-919.jpg");
+	background-size: cover;
+	 height: 100%; 
+  background-position: 0% 30%;
+  background-repeat: no-repeat;
+  background-color: #42455a;
+  font-family: sans-serif;
+  font-size: 16px;
+		}
+	</style>
+<div class="navbar">
+
+	<a href="home.html">Home</a>
+
+	<div class="dropdown">
+
+	<button class="dropbtn">Room
+	    <i class="fa fa-caret-down"></i>
+	</button>
+
+		<div class="dropdown-content">
+		    <a href="#">Check Availability</a>
+		    <a href="#">Booking</a>
+		</div>
+
+	</div> 
+
+	<a href="#">Hotel Reservation</a>
+
+	<div class="dropdown">
+
+	<button class="dropbtn">Mulitiple Hotel
+	    <i class="fa fa-caret-down"></i>
+	</button>
+
+		<div class="dropdown-content">
+		    <a href="web2-gallery.html">View Photo Gallery</a>
+		    <a href="22.html">Hotel Facilities</a>
+		    <a href="test.html">LOCATION</a>
+		</div>
+
+	</div> 
+
+	<a href="#aboutus">About Us</a>
+	<a href="#contactus">Conyact Us</a>		
+
+
+</div>
+	<div class="maintopic">
+		<h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspStay With Us, And Feel Like Home...</h3>
+	</div>
+
+	
+	
+	<div class="wrap">
+
+		<h2>Sign Up</h2>
+			<div class="imgcontainer">
+   			 <img src="signuser.png" alt="Avatar" class="avatar">
+ 			 </div>
+		<form action="Signup.php" method="POST" >
+			<input type="text" placeholder="First Name" name="fname" required>
+			<input type="text" placeholder="Last Name" name="lname" required>
+			
+			<input type="text" placeholder="Date of birth                 DD/MM/YY" name="dob" required>
+			<input type="text" placeholder="Email" name="email" required>
+			<input type="text" placeholder="Contact number" name="number" required>
+			<input type="text" placeholder="Username" name="username" required>
+			<input type="Password" placeholder="Password" name="password" required>
+
+			<input type="Password" placeholder="Confirm Password" name="confirm" required>
+			<br></br>&nbsp&nbsp
+			<input type="checkbox" id="terms" name="terms"><label for="terms">&nbsp&nbsp I Agree to the terms and &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+
+			<a href="T&C.pdf">conditions</a>
+
+			
+			<input type="submit" name="Submit">
+			<p id="first">&nbsp&nbsp&nbspAlready have an account?<a href="Login.html">Sign in</a></p>
+	</form>
+	</div>
+
+
+<div class="w3-content w3-section">
+  <img class="" src="2f6b5dea6f7c4e0b3f628f204c879fbd.jpg" >
+  <img class="mySlides w3-animate-right" src="csm_box-restaurant-wolf-hotels_04_e8b4bdf3f0.jpg" >
+  <img class="" src="17828854_rH42hpBmIrctgUd2l5hlOfoOLktYNPYyQbfK6fPAcIU.jpg" >
+  <img class="" src="blue-spa-web.jpg">
+  <img class="" src="dam-images-travel-2015-hotel-pools-best-hotel-pools-01.jpg">
+  <img class="" src="Hotel-design-1-600x600.jpg">
+  <img class="v " src="Sicis-for-Sale-Shower-Floor-Thickness-Luxury-Bathroom-Tile-Designs.jpg">
+  <img class="mySlides w3-animate-right" src="register8.jpg">
+</div>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000);    
+}
+</script>
+
+<footer>
+<div class="down" id="contactus">
+	<div class="foot">
+		COMPANY INFORMATION :
+		address,
+		street address,
+		Pokhara, Singapore.
+		<br>
+		Phone:(111) 5XXXXX
+		<br>
+		Fax: (000) 00000000
+		<br>
+		Email: bluepearl@hoteli.com
+		<br>
+		Follow us on: Facebook, Twitter
+		<br>
+		  <div class="icon">
+    
+    <a target="_blank" href="fb (2).png">
+      <a href="https://www.facebook.com/">
+    <img src="fb (2).png" ></a>
+    <a href="https://www.instagram.com/?hl=en">
+    <img src="ig.png"></a>
+    <a href="https://twitter.com/?lang=en">
+    <img src="tw.png"></a>
+    <a href="https://accounts.google.com/ServiceLogin/signinchooser?elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+    <img src="gg.png"></a>
+   
+</div>
+		THIS PROJECT IS BROUGHT TO YOU BY CODE-PROJECTS
+		<form action="home.php" method="REQUEST">
+		<div class="wrapper">
+  		<div class="visi">
+    	Visitor Count
+  		</div>
+  		<div class="count">
+    	<?php
+    	echo $total_visitors;
+    	?>
+  		</div>
+
+		</div>
+		</form>
+	</div>
+
+</div>
+</footer>
+
+
+</body>
+</html>
+
